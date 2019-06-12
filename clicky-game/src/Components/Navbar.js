@@ -5,7 +5,6 @@ import Main from "./Main";
 import GameStatus from "./GameStatus";
 
 const Navbar = props => {
-  console.log(props.state.correctGuess);
   return (
     <nav id="nav">
       <ul className="container" id="navContainer">
