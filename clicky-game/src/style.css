@@ -1,15 +1,38 @@
 #nav {
-    background-color: blueviolet;
-    color:  white;
-    display: flex;
+  background-color: blueviolet;
+  color: white;
+  display: flex;
 }
 .NavElements {
-    flex: 1;
-    list-style-type: none;
-    font-size: 30px;
+  flex: 1;
+  list-style-type: none;
+  font-size: 30px;
 }
-#navContainer {  display: flex;}
+#navContainer {
+  display: flex;
+}
 
 .jumbotron {
-    align-content: center;
+  align-content: center;
+}
+
+.cardDeck {
+  margin: 0 auto;
+  align-content: center;
+}
+
+.allCards {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  text-align: center;
+}
+
+.allCards img {
+  margin: 3px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  max-height: 200px;
+  max-width: 200px;
+  background-color: white;
 }

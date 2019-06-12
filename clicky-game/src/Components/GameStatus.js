@@ -1,7 +1,7 @@
 import React from "react";
 
 var GameStatus = props => {
-  if (props.state.topScore === 0) {
+  if (props.state.startOfGame === true) {
     return <li className="NavElements">Click an image to begin</li>;
   } else {
     return (

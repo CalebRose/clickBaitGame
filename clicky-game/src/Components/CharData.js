@@ -21,7 +21,7 @@ var CharData = [
   },
   {
     id: 5,
-    img: "/images/joffery.jpg",
+    img: "/images/joffrey.jpg",
     name: "Joffrey"
   },
   {
