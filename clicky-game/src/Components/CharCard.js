@@ -1,7 +1,6 @@
 import React from "react";
 
 var CharCard = props => {
-  console.log(props.info.id);
   return (
     <div className="card">
       <div className="img-container">
