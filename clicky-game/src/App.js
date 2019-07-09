@@ -13,35 +13,39 @@ class App extends React.Component {
       //
       score: 0,
       topScore: 0,
-      correctGuess: false,
+      correctGuess: true,
+      startOfGame: true,
       clickedCards: [],
       CharData: CharData
     };
     this.clickScore = this.clickScore.bind(this);
     // this.clickedChar = this.clickedChar.bind(this);
   }
-  clickScore(event) {
+  clickScore = event => {
     console.log("THE KEY IS " + event.target.id);
-    this.setState({
-      score: this.state.score + 1,
-      topScore:
-        this.state.score >= this.state.topScore
-          ? this.state.score + 1
-          : this.state.topScore
-      // topScore: this.state.score + 1
-    });
-    if (this.state.clickedCards.includes(this.state.clickedCards)) {
+    let shuffledData = this.state.CharData.sort(() => Math.random() - 0.5);
+    if (this.state.clickedCards.includes(event.target.id)) {
       // this.state.clickedCards.some(id => ())
       this.setState({ score: 0, clickedCards: [], correctGuess: false });
     } else {
+      let updatedCards = this.state.clickedCards.concat(event.target.id);
+      // shuffle(CharData);
       this.setState({
-        clickedCards: this.state.clickedCards.push(event.target.id)
+        clickedCards: updatedCards,
+        score: this.state.score + 1,
+        correctGuess: true,
+        startOfGame: false,
+        topScore:
+          this.state.score >= this.state.topScore
+            ? this.state.score + 1
+            : this.state.topScore
       });
-      console.log(this.state.clickedCards);
     }
-
-    // clickedCards : clickedCards.push()
-  }
+    this.setState({ CharData: shuffledData });
+    //rearrange = (arr) => {
+    // let currentGuess = arr.length
+    // }
+  };
   render() {
     return (
       <div className="App">
