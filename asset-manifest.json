@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/clickBaitGame/static/css/main.36adc0eb.chunk.css",
+    "main.js": "/clickBaitGame/static/js/main.846b60bf.chunk.js",
+    "main.js.map": "/clickBaitGame/static/js/main.846b60bf.chunk.js.map",
+    "runtime~main.js": "/clickBaitGame/static/js/runtime~main.78bc2114.js",
+    "runtime~main.js.map": "/clickBaitGame/static/js/runtime~main.78bc2114.js.map",
+    "static/js/2.4e81ba5b.chunk.js": "/clickBaitGame/static/js/2.4e81ba5b.chunk.js",
+    "static/js/2.4e81ba5b.chunk.js.map": "/clickBaitGame/static/js/2.4e81ba5b.chunk.js.map",
+    "index.html": "/clickBaitGame/index.html",
+    "precache-manifest.5ca243e5d848f945681d52bc4eaffd4a.js": "/clickBaitGame/precache-manifest.5ca243e5d848f945681d52bc4eaffd4a.js",
+    "service-worker.js": "/clickBaitGame/service-worker.js",
+    "static/css/main.36adc0eb.chunk.css.map": "/clickBaitGame/static/css/main.36adc0eb.chunk.css.map"
+  }
+}
